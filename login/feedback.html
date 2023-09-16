@@ -15,8 +15,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AdminPanel</title>
-        <!-- <style>
+        <title>ContactForm</title>
+        <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
 /* 
             .mainback {
@@ -133,11 +133,11 @@
              
                 
             }
-            .awelcome{
-                margin-left: 35vw;
+            .fwelcome{
+                margin-left: 24vw;
                 font-weight: bold;
                 font-size: 3rem;
-                color:balck
+                color:black;
             }
             .admin{
                 font-weight: bolder;
@@ -150,12 +150,9 @@
                 width: 100vw;
                 height: 100vh;
                 background-color: rgb(45, 42, 42);
-                       display: flex;
-                
+                display: flex;
                 z-index: 1;
-
             }
-
             .acontent {
                 width: 95vw;
                 height: 65vh;
@@ -239,8 +236,8 @@ transition: ease 0.5s; */
              
                 
             } */
-            .awelcome{
-                margin-left: 35vw;
+            .fwelcome{
+                margin-left:10vw;
                 font-weight: bold;
                 font-size: 1.5rem;
                 color:black;
@@ -252,12 +249,10 @@ transition: ease 0.5s; */
                 rgb(177, 55, 7);
             }
             }
-        </style> -->
-        <link rel="stylesheet" href="../css/login/admin.css">
+        </style>
           <link rel="stylesheet" href="../css/style.css">
           <link rel="stylesheet" href="../css/front.css">
-          <link rel="stylesheet" href="../css/login/secondnav.css">
-        </head>
+    </head>
 
     <body>
         <!-- TOP NAVIGATION -->
@@ -279,17 +274,16 @@ transition: ease 0.5s; */
     </nav>
     <div class="adminnav">
       
-            <div class="adminnavpart"><a href="./admin.html" >EXPERIENCE</a></div>
-            <div class="adminnavpart"><a href="./adminfeedback.html" >FEEDBACK</a></div>
-            <div class="adminnavpart"><a href="./totaluser.html" >USERS</a></div>
-
- 
-    </div>
-    
-        <div class="awelcome">
-            WELCOME <span class="admin">ADMIN </span>
+        <div class="adminnavpart"><a href="./admin.html" >EXPERIENCE</a></div>
+        <div class="adminnavpart"><a href="./adminfeedback.html" >FEEDBACK</a></div>
+        <div class="adminnavpart"><a href="./totaluser.html" >USERS</a></div>
+      
+      
+      </div>
+        <div class="fwelcome">
+            <!-- WELCOME <span class="admin">ADMIN </span> -->
+Give Your Valueable Feedback
         </div>
-
         <div class="amain">
             <div class="acontent">
                 <form action="#" name="myform">
@@ -298,7 +292,7 @@ transition: ease 0.5s; */
                         STRIVE TO CREATE DIFFERENCE</div>
                     <input type="text" name="fname" class="aname aformEntry" id="name" placeholder="Name" />
                     <input type="text" name="femail" class="aemail aformEntry" id="email" placeholder="Email" />
-                    <input type="text" name="fbsname" class="aemail aformEntry" id="wow" placeholder="Words of Wisdom" maxlength="50"/> 
+                    <input type="text" name="fbsname" class="aemail aformEntry" id="wow" placeholder="Feedback" maxlength="50"/> 
                     <input class="asubmit" type="submit" id='submit' />
                 </form>
             </div>
@@ -312,14 +306,14 @@ transition: ease 0.5s; */
         import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"
 
         const firebaseConfig = {
-    apiKey: "AIzaSyB1Ha5LYqm2j5mfbLWUNuWOeZ2Vp9aT50I",
-    authDomain: "endeavouradminpanel.firebaseapp.com",
-    databaseURL: "https://endeavouradminpanel-default-rtdb.firebaseio.com",
-    projectId: "endeavouradminpanel",
-    storageBucket: "endeavouradminpanel.appspot.com",
-    messagingSenderId: "1059223226055",
-    appId: "1:1059223226055:web:b5493b3554d9d03e2d20e2",
-    measurementId: "G-0JFS3KJQQB"
+    apiKey: "AIzaSyAv91RZ-KPBeYYwGMQJh0oZf1srFggh1II",
+    authDomain: "endeavourfeedback.firebaseapp.com",
+    databaseURL: "https://endeavourfeedback-default-rtdb.firebaseio.com",
+    projectId: "endeavourfeedback",
+    storageBucket: "endeavourfeedback.appspot.com",
+    messagingSenderId: "378238217404",
+    appId: "1:378238217404:web:9f2ac6716b03c97541b4b9",
+    measurementId: "G-KPFN7YFV4N"
   };
         //INTIALISE DATABASE
         initializeApp(firebaseConfig);
@@ -338,7 +332,7 @@ transition: ease 0.5s; */
                     // Data saved successfully!
                     // alert("done")
                       alert("DONE !  YOUR RESPONSE HAS BEEN SUBMITTED");
-                    window.location.href = 'wisdom.html';
+                    // window.location.href = 'wisdom.html';
                 })
                 .catch((error) => {
                     console.log(error);
