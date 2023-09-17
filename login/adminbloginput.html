@@ -73,10 +73,76 @@
     </div>
     
         <div class="awelcome">
-COMMING SOON
+           Blog/Article/Any Infomative Resource for members
         </div>
 
-       
+        <div class="amain">
+            <div class="acontent">
+                <form action="#" name="myform">
+                    <!-- <div class="apageTitle ">ENDEAVOUR</div>
+                    <div class="asecondaryTitle ">
+                        STRIVE TO CREATE DIFFERENCE</div> -->
+                    <input type="text" name="fname" class="aname aformEntry" id="name" placeholder="Topic" />
+                    <!-- <input type="text" name="femail" class="aemail aformEntry" id="email" placeholder="Email" /> -->
+                    <input type="text" name="fbsname" class="aemail1 aformEntry" id="wow" placeholder="Article" maxlength="500"/> 
+                    <input class="asubmit" type="submit" id='submit' />
+                </form>
+            </div>
+
+        </div>
+    </body>
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js'
+        import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"
+
+        const firebaseConfig = {
+    apiKey: "AIzaSyCp_chWInsV85Vrx0JCl2jZyiY2PWpKRTI",
+    authDomain: "endeavourblog-76ed5.firebaseapp.com",
+    projectId: "endeavourblog-76ed5",
+    storageBucket: "endeavourblog-76ed5.appspot.com",
+    messagingSenderId: "730573597962",
+    appId: "1:730573597962:web:d68edae362dcfeec845ef3",
+    measurementId: "G-1F9C4LHG23"
+  };
+
+        //INTIALISE DATABASE
+        initializeApp(firebaseConfig);
+        const root = getDatabase();
+        let id ;
+        //WRITE OR TAKE VALUE IN DATABASE
+        function writeUserData(n,w) {
+            // set(ref(root,'user/' + userId),{
+            set(ref(root, 'users/' + id), {
+                name: n,
+                // email: e,
+                wow: w
+
+            })
+                .then(() => {
+                    // Data saved successfully!
+                    // alert("done")
+                      alert("DONE !  YOUR RESPONSE HAS BEEN SUBMITTED");
+                    window.location.href = 'wisdom.html';
+                })
+                .catch((error) => {
+                    console.log(error);
+                    alert("error ")
+                });
+        }
+
+        //TO SAVE THE DATA AFTER CLICKING ON SIGN UP BUTTON 
+        submit.addEventListener('click', (e) => {
+            // e.preventdefault();
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            // var email = document.getElementById('email').value;
+            var wow = document.getElementById('wow').value;
+            id=`${name}`;
+            writeUserData(name,wow);
+        })
+    </script>
 
     </html>
 
