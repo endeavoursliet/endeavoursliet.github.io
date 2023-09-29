@@ -339,7 +339,7 @@
 
     function writeUserData(_name,mail,_contact,_reg,_ten,_twelve,_why,_prog, _year,_trade
     ) {
-      set(dbRef(root, "registrations/" + uid), {
+      set(dbRef(root, `registrations/  ${uid}/  ${uid} `), {
         name: _name,
         email: mail,
         contactno: _contact,

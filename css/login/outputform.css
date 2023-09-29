@@ -1,145 +1,148 @@
 .body {
-    /* background-image: linear-gradient(to bottom right , rgb(0, 0, 0) ,#95DBE5FF); */
-    background-color: #95DBE5FF;
-    color: rgb(1, 48, 24);
-    font-size: 2rem;
-    font-weight: bold;
-    padding: auto;
-    /* display: flex; */
-    background-repeat: no-repeat;
-  }
+  /* background-image: linear-gradient(to bottom right , rgb(0, 0, 0) ,#95DBE5FF); */
+  background-color: #95DBE5FF;
+  color: rgb(1, 48, 24);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: auto;
+  /* display: flex; */
+  background-repeat: no-repeat;
+}
 
+.divclass {
+  background-color: rgb(121, 3, 3);
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /* margin: 5%; */
+  width: 30vw;
+  height: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2% 0 0 2%;
+  margin-left:10%;
+  margin-top: 2%;
+  font-size: 2rem;
+
+}
+#content{
+  display: inline-block;
+}
+
+
+
+.welcomemember{
+  font-size: 2rem;
+  color: rgb(135, 9, 9);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.td2class{
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+.blog{
+  text-align: center;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 780px) {
   .divclass {
-    background-color: rgb(121, 3, 3);
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    /* margin: 5%; */
-    width: 30vw;
-    height: 20vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    padding: 2% 0 0 2%;
-    margin-left:10%;
-    margin-top: 2%;
-    font-size: 2rem;
+  /* margin: 5%; */
+  width: 80vw;
+  height: 20vh;
  
-  }
-  #content{
-    display: inline-block;
-  }
- 
- 
- 
-  .welcomemember{
-    font-size: 3rem;
-    color: rgb(135, 9, 9);
-    font-weight: bolder;
-    text-align: center;
-  }
- 
-  .td2class{
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 2rem;
-    font-weight: bolder;
-    font-style: italic;
-  }
-  .blog{
-    text-align: center;
-    font-size: 2rem;
-  }
-  @media only screen and (max-width: 780px) {
-    .divclass {
-    /* margin: 5%; */
-    width: 80vw;
-    height: 20vh;
-   
-    padding: 2% 0 0 5%;
-    margin-left:10%;
-    margin-top: 2%;
-    font-size: 1rem;
- 
-  }
-  #content{
-    display:block;
-
-  }
- 
- 
- 
-  .welcomemember{
-    font-size: 2rem;
-    color: rgb(135, 9, 9);
-    font-weight: bolder;
-    text-align: center;
-  }
- 
-  .td2class{
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 1rem;
-    font-weight: bolder;
-    font-style: italic;
-    padding-top: 5% ;
-  }
-  .td4{
-    display: block;
-    padding-top: 5%;
+  padding: 2% 0 0 5%;
+  margin-left:10%;
+  margin-top: 2%;
   font-size: 1rem;
-  margin-top: 50px;
-  }
-  .blog{
-    text-align: center;
-    font-size: 2rem;
-  }
-}
-  @media only screen and (max-width: 399px) {
-    .divclass {
-  
-    /* margin: 5%; */
-    width: 80vw;
-    height: 20vh;
-   
-    padding: 2% 0 0 5%;
-    margin-left:10%;
-    margin-top: 2%;
-    font-size: 1rem;
- 
-  }
-  #content{
-    display:block;
 
-  }
- 
- 
- 
-  .welcomemember{
-    font-size: 2rem;
-    color: rgb(135, 9, 9);
-    font-weight: bolder;
-    text-align: center;
-  }
- 
-  .td2class{
-    color: rgb(255, 255, 255);
-    display: block;
-    font-size: 1rem;
-    font-weight: bolder;
-    font-style: italic;
-    padding-top: 5% ;
-  }
-  .td4{
-    display: block;
-    padding-top: 5%;
-  font-size: 1rem;
-  margin-top: 50px;
-  }
-  .blog{
-    text-align: center;
-    font-size: 2rem;
-  }
 }
-    
+#content{
+  display:block;
+
+}
+
+
+
+.welcomemember{
+  font-size: 2rem;
+  color: rgb(135, 9, 9);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.td2class{
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding-top: 5% ;
+}
+.td4{
+  display: block;
+  padding-top: 5%;
+font-size: 1rem;
+margin-top: 50px;
+}
+.blog{
+  text-align: center;
+  font-size: 2rem;
+}
+}
+@media only screen and (max-width: 399px) {
+  .divclass {
+
+  /* margin: 5%; */
+  width: 80vw;
+  height: 20vh;
+ 
+  padding: 2% 0 0 5%;
+  margin-left:10%;
+  margin-top: 40%;
+  font-size: 1rem;
+
+}
+#content{
+  display:block;
+
+}
+
+
+
+.welcomemember{
+  margin-top: 15px;
+  padding: 2px;
+  font-size: 2rem;
+  color: rgb(135, 9, 9);
+  font-weight: bolder;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.td2class{
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding-top: 5% ;
+}
+.td4{
+  display: block;
+  padding-top: 5%;
+font-size: 1rem;
+margin-top: 20px;
+box-sizing: 5rem;
+}
+.blog{
+  text-align: center;
+  font-size: 2rem;
+}
+}
   

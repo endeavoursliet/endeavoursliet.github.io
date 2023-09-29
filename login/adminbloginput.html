@@ -72,9 +72,10 @@
         <div class="adminnavpart"><a href="./totaluser.html" >USERS</a></div>
     </div>
     
-        <div class="awelcome">
-           Blog/Article/Any Infomative Resource for members
+        <div class="awelcome" >
+           Blog / Article /Info 
         </div>
+        <div style="text-align: center;">Blog/Article can be shared by admins</div>
 
         <div class="amain">
             <div class="acontent">
@@ -123,8 +124,8 @@
                 .then(() => {
                     // Data saved successfully!
                     // alert("done")
-                      alert("DONE !  YOUR RESPONSE HAS BEEN SUBMITTED");
-                    window.location.href = 'wisdom.html';
+                    alert("ThankYou! Your Blog has been shared");
+                    window.location.href = 'adminexperience.html';
                 })
                 .catch((error) => {
                     console.log(error);
@@ -132,7 +133,6 @@
                 });
         }
 
-        //TO SAVE THE DATA AFTER CLICKING ON SIGN UP BUTTON 
         submit.addEventListener('click', (e) => {
             // e.preventdefault();
             e.preventDefault()
@@ -140,7 +140,14 @@
             // var email = document.getElementById('email').value;
             var wow = document.getElementById('wow').value;
             id=`${name}`;
+           if((name.length<=3)||(wow.length<2))
+           {
+            alert("Plese fill all the details")
+           }
+           else{
             writeUserData(name,wow);
+           }
+           
         })
     </script>
 

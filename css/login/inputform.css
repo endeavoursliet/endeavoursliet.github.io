@@ -34,7 +34,7 @@
                 /* font-weight:1200; */
                 font-style: italic;
                 margin-left: 10vw;
-                color:rgb(177, 55, 7);
+                color:#a00000;
                 z-index: 1;
             }
 
@@ -63,7 +63,7 @@
                 background-color: #ebebeb;
                 color: #090909;
                 width: 20vw;
-                border: 5px solid rgb(177, 55, 7);
+                border: 5px solid #a00000;
            
             }
 
@@ -79,7 +79,7 @@
                 color: rgb(9, 9, 9);
                 width: 20vw;
    
-                border: 5px solid rgb(177, 55, 7);;
+                border: 5px solid #a00000;;
                 ;
                 
             }
@@ -95,7 +95,7 @@
                 color: rgb(9, 9, 9);
                 width: 20vw;
    
-                border: 5px solid rgb(177, 55, 7);;
+                border: 5px solid  #a00000;
                 ;
                 
             }
@@ -114,7 +114,7 @@
                 color: white;
                 background-color: rgb(0, 0, 0);;
                 font-size: 20px;
-                position: absolute;
+                /* position: absolute; */
                 right: 260;
                 bottom: 80;
                 border: 5px solid #ffffff;
@@ -124,7 +124,7 @@
             }
 
             .asubmit:hover {
-                background-color: rgb(131, 40, 3);
+                background-color:  #a00000;;
              
                 
             }
@@ -137,8 +137,7 @@
             .admin{
                 font-weight: bolder;
                 font-size: 3rem;
-               color:
-                rgb(177, 55, 7);
+               color: #a00000;
             }
             @media only screen and (max-width:760px){
                 .amain {
@@ -170,7 +169,7 @@
                 font-style: italic;
                 text-align: center;
                 margin-left:10vw;
-                color:rgb(177, 55, 7);
+                color:#a00000;
                 z-index: 1;
             }
 
@@ -197,7 +196,7 @@
                 border: none;
                 transition: all 0.5s ease 0s;
                 border-radius: 20px;
-                border: 5px solid rgb(177, 55, 7);
+                border: 5px solid #a00000;
                 background-color: #ebebeb;
                 color: #090909;
             }
@@ -215,12 +214,12 @@ transition: ease 0.5s; */
 
             .asubmit {
                 position: relative;
-                width: 60vw;
+                width: 80vw;
                 height: 8vh;
                 color: white;
                 background-color: rgb(0, 0, 0);;
                 font-size: 20px;
-                position: absolute;
+
                 right: 260;
                 bottom: 80;
                 border: 5px solid #ffffff;
@@ -240,12 +239,28 @@ transition: ease 0.5s; */
                 margin-left: auto;
                 font-weight: bold;
                 font-size: 1.5rem;
-                color:black;
+                /* color:black; */
             }
-            .admin{
-                font-weight: bolder;
-                font-size: 1rem;
-               color:
-                rgb(177, 55, 7);
+            .welcome_admin{
+                /* font-weight: bolder; */
+                /* font-size: 1.5rem; */
+               color: #a00000;
             }
+            }
+            @media only screen and (max-width:320px){
+                .asubmit {
+                    position: relative;
+                    width: 80vw;
+                    height: 8vh;
+                    color: white;
+                    background-color: rgb(0, 0, 0);;
+                    font-size: 20px;
+    
+                    right: 260;
+                    bottom: 80;
+                    border: 5px solid #ffffff;
+                    border-radius: 25px;
+                    margin-left: 9vw;
+    
+                } 
             }
