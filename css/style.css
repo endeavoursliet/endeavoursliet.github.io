@@ -91,8 +91,8 @@ a{
     
 }
 .popup {
-    width: 85%;
-    height: 85%;
+    width:75;
+    height: 75%;
     margin: auto;
     display: flex;
     border-radius: 3%;
@@ -816,6 +816,7 @@ a{
     }
 
     .footerSocialIcons a {
+        margin-top: 10px;
         text-decoration: none;
         color: #FFFFFF;
     }
@@ -1019,7 +1020,7 @@ a{
             }
 
             .topNav ul li {
-                font-size: 12px;
+                font-size: 8px;
             }
 
             .topNav .emptySpace25 .endeavourLogo {

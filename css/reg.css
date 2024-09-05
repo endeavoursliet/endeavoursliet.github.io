@@ -21,10 +21,6 @@
 * {
     font-family: Montserrat;
 }
-body {
-
-}
-
 
 
 .container {
@@ -66,9 +62,7 @@ body {
     text-align: justify;
 }
 
-.content-dealing p{
-    
-}
+
 .main {
     width: 45%;
     text-align : center;
@@ -100,7 +94,7 @@ body {
 .formEntry {
     display: block;
     margin: 10px auto;
-    width: 300px;
+    width: 400px;
     height: 50px;
     /*transition: all 0.5s ease 0s;*/
     background-color: #ebebeb;
@@ -116,7 +110,7 @@ body {
 
     .formEntry:hover {
         transition: ease 1s;
-        width: 300px;
+        width: 400px;
     }
 
     .formEntry placeholder {

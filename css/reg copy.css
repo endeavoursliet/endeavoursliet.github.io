@@ -21,9 +21,7 @@
 * {
     font-family: Montserrat;
 }
-body {
 
-}
 
 
 
@@ -66,9 +64,7 @@ body {
     text-align: justify;
 }
 
-.content-dealing p{
-    
-}
+
 .main {
     width: 45%;
     text-align : center;
@@ -100,7 +96,7 @@ body {
 .formEntry {
     display: block;
     margin: 10px auto;
-    width: 300px;
+    width: 400px;
     height: 50px;
     /*transition: all 0.5s ease 0s;*/
     background-color: #ebebeb;
@@ -112,8 +108,23 @@ body {
     padding-right: 10px;
     text-align: left;
 }
+.formEntryQuestion {
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+    height: 150px;
+    /*transition: all 0.5s ease 0s;*/
+    background-color: #ebebeb;
+    color: rgb(9, 9, 9);
+    border: 2px solid rgb(177, 55, 7);
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
 .extend{
-    width: 326px;
+    width: 426px;
 }
 
 /* 
