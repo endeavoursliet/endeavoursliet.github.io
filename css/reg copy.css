@@ -35,7 +35,7 @@
 
 .content {
     width: 45%;
-    background-color: rgb(177, 55, 7);
+    background-color: #A00000;
     border-radius: 50px;
     color: #fff;
     font-family: sans-serif;
@@ -89,7 +89,7 @@
 
 .secondaryTitle {
     font-size: 20px;
-    color: rgb(177, 55, 7);
+    color: #A00000;
     margin-bottom : 40px;
 }
 
@@ -101,7 +101,7 @@
     /*transition: all 0.5s ease 0s;*/
     background-color: #ebebeb;
     color: rgb(9, 9, 9);
-    border: 2px solid rgb(177, 55, 7);
+    border: 2px solid #A00000;
     border-radius: 10px;
     font-size: 16px;
     padding-left: 10px;
@@ -116,7 +116,7 @@
     /*transition: all 0.5s ease 0s;*/
     background-color: #ebebeb;
     color: rgb(9, 9, 9);
-    border: 2px solid rgb(177, 55, 7);
+    border: 2px solid #A00000;
     border-radius: 10px;
     font-size: 16px;
     padding-left: 10px;
@@ -144,7 +144,7 @@
 }
 .submit {
     color: white;
-    background-color: rgb(177, 55, 7);
+    background-color: #A00000;
     font-size: 20px;
     padding: .5em;
     border: 5px solid #ffffff;
@@ -163,7 +163,7 @@
     .pop_msg{
         height : 100px;
         width : 100%;
-        background-color : maroon;
+        background-color : #A00000;
         text-align : center;
         position : fixed;
         bottom : 40%;
