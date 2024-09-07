@@ -112,6 +112,13 @@ text-align: center;
         <input type="text" class="formEntry" name="Twelveth_Percentage" id="twelve" placeholder="12th %" />
         <input type="text" class="formEntry" name="Diploma_Percentage" id="diploma" placeholder="Diploma %" />
 
+        <select class="formEntry extend" name="Gender" required id="gender">
+          <option value="">Tap to select Gender*</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
         <select class="formEntry extend" name="Programme" required id="prog">
           <option value="">Tap to select programme*</option>
           <option value="B.E">B.E</option>
@@ -212,7 +219,7 @@ text-align: center;
           I hereby declare that all the information provided above is correct to
           the best of my knowledge.</label><br /><br />
 
-        <input type="submit" id="submitbtn" class="submit" />
+        <input type="submit" id="submitbtn" class="submit" value="Submit"  />
         <input type="reset" id="resetBtn" style="display: none;" />
       </form>
     </div>
@@ -226,6 +233,7 @@ text-align: center;
   tech_SM.addEventListener("change", (e) => {
     if (e.target.value == "Social Media") {
       Social_Media.style.display = "block";
+      Social_Media.required = true;
     }
     if (e.target.value == "Techical") {
       Social_Media.style.display = "None";
@@ -273,6 +281,11 @@ text-align: center;
 
 
   function upload(e, valId, fileType, p) {
+
+    let submitbtn = document.getElementById("submitbtn")
+    submitbtn.disabled = true;
+    submitbtn.value = "Uploading "+ fileType + "...";
+
     let files = e.target.files
     let metadata = {
       contentType: files[0].type
@@ -288,6 +301,16 @@ text-align: center;
       let htmlProgress = p;
       htmlProgress.style.width = progress + "%";
       htmlProgress.innerHTML = progress + "%"
+
+      if (progress == 100) {
+        submitbtn.disabled = false;
+        submitbtn.value = "Submit";
+      }else{
+        submitbtn.disabled = true;
+        submitbtn.value = "Uploading "+ fileType + "...";
+      }
+
+
 
     },
       (err) => {
