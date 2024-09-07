@@ -163,7 +163,7 @@
     .pop_msg{
         height : 100px;
         width : 100%;
-        background-color : #A00000;
+        background-color : #A00000  ;
         text-align : center;
         position : fixed;
         bottom : 40%;
@@ -177,6 +177,10 @@
         width  : 100px;
         background-color : white;
         border-radius  : 10px;
+    }
+
+    .Question{
+        height: 120px; width: 410px; padding-top: 10px; padding-bottom: 10px;
     }
 
 @media (max-width: 850px) {
@@ -196,5 +200,46 @@
         width: 43vw;
         height: 43vw;
         margin: auto;
+    }
+    .formEntry{
+        width: 85%;
+    }
+
+    .extend{
+        width: 88%;
+    }
+
+    .Question{
+        width: 85%;
+    }
+    .submit{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .extend{
+        width: 90%;
+    }
+}
+@media (max-width: 300px) {
+    .topNav ul li{
+        font-size: 5px;
+    }
+}
+@media (max-width: 200px) {
+    .pageTitle{
+        font-size: 20px;
+    }
+    .secondaryTitle{
+        font-size: 10px;
+    }
+
+    .content-dealing{
+        font-size: 15px;
+    }
+
+    .topNav ul li{
+        font-size: 3px;
     }
 }
