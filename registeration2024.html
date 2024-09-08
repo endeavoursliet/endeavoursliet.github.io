@@ -26,18 +26,18 @@
   <nav class="topNav">
     <div class="emptySpace25">
       <div class="endeavourLogo">
-        <a href="./index.html#home"><img src="./images/mainlogo.png" alt="Endeavour-Logo" srcset="" /></a>
+        <a href="./index.html"><img src="./images/mainlogo.png" alt="Endeavour-Logo" srcset="" /></a>
       </div>
     </div>
     <ul class="navArray">
       <li class="navComponent flex-center">
-        <a href="./index.html#home" class="flex-center">HOME</a>
+        <a href="./index.html" class="flex-center">HOME</a>
       </li>
       <li class="navComponent flex-center">
-        <a href="./about.html#aboutTeam" class="flex-center">ABOUT US</a>
+        <a href="./about.html" class="flex-center">ABOUT US</a>
       </li>
       <li class="navComponent flex-center">
-        <a href="projects.html#UAVs" class="flex-center">DOMAINS</a>
+        <a href="projects.html" class="flex-center">DOMAINS</a>
       </li>
       <li class="navComponent flex-center">
         <a href="./index.html#sponsors" class="flex-center">SPONSORS</a>
@@ -106,7 +106,7 @@ text-align: center;
       <form action="" name="google-sheet">
         <input type="text" class="formEntry" name="Name" required id="name" placeholder="Name*" />
         <input type="email" class="formEntry" name="Email" required id="email" placeholder="Email*" />
-        <input type="tel" class="formEntry" name="Contact" required id="contact" placeholder="Contact No*" />
+        <input type="number" class="formEntry" name="Contact" required id="contact" placeholder="Contact No*" />
         <input type="number" class="formEntry" name="RegNo" required id="regno" placeholder="Reg No*" />
         <input type="text" class="formEntry" name="Tenth_Percentage" required id="ten" placeholder="10th %*" />
         <input type="text" class="formEntry" name="Twelveth_Percentage" id="twelve" placeholder="12th %" />
@@ -150,8 +150,8 @@ text-align: center;
         <button id="upbtn" class="formEntry extend" onclick="document.getElementById('getFile').click()">
           Tap to upload Photo*
         </button>
-        <input type="file" required id="getFile" style="display: none" />
-        <input type="text" name="Photo" id="getFileValue" style="display: none" />
+        <input type="file" id="getFile" style="display: none" />
+        <input type="text" name="Photo" id="getFileValue" style="display: none;" />
         <div class="progressBar formEntry fileProgress" style="
       height: 15px;
       border: 2px solid rgb(13, 165, 26);
@@ -341,6 +341,9 @@ text-align: center;
     document.getElementById("upbtn").innerHTML = file.name;
     upload(e, "getFileValue", "Photos", fileProgressed)
     fileProgress.style.display = "block"
+
+    document.getElementById("submitbtn").value = "Submit";
+    document.getElementById("submitbtn").disabled = false;
   })
 
   getres.addEventListener('change', (e) => {
@@ -362,6 +365,17 @@ text-align: center;
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    let photo = document.getElementById("getFileValue")
+
+    if (photo.value == "") {
+      document.getElementById("submitbtn").value = "Please Upload a Photo";
+      document.getElementById("submitbtn").disabled = true;
+    }
+    else{
+
+      document.getElementById("submitbtn").value = "Submit";
+      document.getElementById("submitbtn").disabled = false;
+
     loading.style.display = "flex"
     container.style.display = "none"
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
@@ -397,6 +411,8 @@ text-align: center;
         container.style.display = "flex"
         alert("Something Went Wrong")
       })
+
+    }
   })
 
 </script>
